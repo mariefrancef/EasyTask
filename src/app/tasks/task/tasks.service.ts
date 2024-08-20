@@ -1,6 +1,7 @@
-import { TaskData } from "zone.js/lib/zone-impl";
+import { Injectable } from "@angular/core";
 import type { NewTaskData } from "./task.model";
 
+@Injectable({ providedIn: 'root' })
 export class TasksService {
   private tasks = [
     {
